@@ -29,6 +29,7 @@ import android.util.Log;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.content.res.Resources.NotFoundException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -62,8 +63,6 @@ class NexusRS extends RenderScriptScene implements
     private final BitmapFactory.Options mOptionsARGB = new BitmapFactory.Options();
 
     private static final String DEFAULT_BACKGROUND = "pyramid";
-
-    private int mCurrentPreset = 0;
 
     private static Context mContext;
 
@@ -101,7 +100,7 @@ class NexusRS extends RenderScriptScene implements
 
     private Allocation[] mTextures = new Allocation[TEXTURES_COUNT];
 
-    public static Preset[] mPreset;
+    public Preset mPreset;
 
     public NexusRS(Context context, int width, int height) {
         super(width, height);
@@ -158,15 +157,15 @@ class NexusRS extends RenderScriptScene implements
      * @author Chris Soyars / Steve Kondik
      * @return Array of Preset instances.
      */
-    private static Preset[] buildColors() {
-
+    private Preset buildColors() {
         final Resources res = mContext.getResources();
-        final String[] presetIds = res.getStringArray(R.array.nexus_colorscheme_ids);
-        final Preset[] preset = new Preset[presetIds.length];
-        for (String presetId : presetIds) {
-            preset[Integer.valueOf(presetId)] = new Preset(res.getStringArray(res.getIdentifier(
-                    "nexus_colorscheme_" + presetId, "array", "com.android.wallpaper")));
-        }
+	String colors[] = new String[] {
+		mPrefs.getString("color0","#66CCDD"),
+                mPrefs.getString("color1","#3366AA"),
+                mPrefs.getString("color2","#6699AA"),
+                mPrefs.getString("color3","#AABBBB")
+	};
+        final Preset preset = new Preset(colors);
         return preset;
     }
 
@@ -275,47 +274,23 @@ class NexusRS extends RenderScriptScene implements
         mWorldState.height = mHeight;
         mWorldState.rotate = mWidth > mHeight ? 1 : 0;
         mWorldState.isPreview = isPreview() ? 1 : 0;
-        mWorldState.color0r = mPreset[mCurrentPreset].color0r;
-        mWorldState.color0g = mPreset[mCurrentPreset].color0g;
-        mWorldState.color0b = mPreset[mCurrentPreset].color0b;
-        mWorldState.color1r = mPreset[mCurrentPreset].color1r;
-        mWorldState.color1g = mPreset[mCurrentPreset].color1g;
-        mWorldState.color1b = mPreset[mCurrentPreset].color1b;
-        mWorldState.color2r = mPreset[mCurrentPreset].color2r;
-        mWorldState.color2g = mPreset[mCurrentPreset].color2g;
-        mWorldState.color2b = mPreset[mCurrentPreset].color2b;
-        mWorldState.color3r = mPreset[mCurrentPreset].color3r;
-        mWorldState.color3g = mPreset[mCurrentPreset].color3g;
-        mWorldState.color3b = mPreset[mCurrentPreset].color3b;
+        mWorldState.color0r = mPreset.color0r;
+        mWorldState.color0g = mPreset.color0g;
+        mWorldState.color0b = mPreset.color0b;
+        mWorldState.color1r = mPreset.color1r;
+        mWorldState.color1g = mPreset.color1g;
+        mWorldState.color1b = mPreset.color1b;
+        mWorldState.color2r = mPreset.color2r;
+        mWorldState.color2g = mPreset.color2g;
+        mWorldState.color2b = mPreset.color2b;
+        mWorldState.color3r = mPreset.color3r;
+        mWorldState.color3g = mPreset.color3g;
+        mWorldState.color3b = mPreset.color3b;
     }
 
     private void createState() {
         mWorldState = new WorldState();
-        /* Try to load a user-specified colorscheme */
-
-        try {
-            mCurrentPreset = Integer.valueOf(mPrefs.getString("colorScheme", "0"));
-        } catch (NumberFormatException e) {
-            mCurrentPreset = -1; // We check this again later.
-        }
-
-        try {
-            mWorldState.mode = mResources.getInteger(R.integer.nexus_mode);
-        } catch (Resources.NotFoundException exc) {
-            mWorldState.mode = 0; // standard nexus mode
-        }
-
-        /*
-         * Sholes devices may specify nexus_mode=1 which means they want to use
-         * the "sholes red" colorscheme. Other devices should use 'Dust' as the
-         * default.
-         */
-        if (mWorldState.mode == 1 && mCurrentPreset == -1) {
-            mCurrentPreset = 6; // Sholes Red
-        } else if (mWorldState.mode == 0 && mCurrentPreset == -1) {
-            mCurrentPreset = 0; // Dust
-        }
-
+        mWorldState.mode = 0; // standard nexus mode
         makeNewState();
 
         mStateType = Type.createFromClass(mRS, WorldState.class, 1, "WorldState");
@@ -343,7 +318,7 @@ class NexusRS extends RenderScriptScene implements
             mTextures[i].uploadToTexture(0);
         }
 
-        setBackground(mPrefs.getString("background", DEFAULT_BACKGROUND));
+        setBackground(mPrefs.getString("nexus_background", DEFAULT_BACKGROUND));
 
     }
 
@@ -432,9 +407,9 @@ class NexusRS extends RenderScriptScene implements
             IHardwareService hardware = IHardwareService.Stub.asInterface(ServiceManager.getService("hardware"));
             
             // Get the colors from the preset
-            int colorR = (int) (mPreset[mCurrentPreset].color0r * 255.0);                                                                        
-            int colorG = (int) (mPreset[mCurrentPreset].color0g * 255.0);                                                            
-            int colorB = (int) (mPreset[mCurrentPreset].color0b * 255.0);
+            int colorR = (int) (mPreset.color0r * 255.0);                                                                        
+            int colorG = (int) (mPreset.color0g * 255.0);                                                            
+            int colorB = (int) (mPreset.color0b * 255.0);
                                    
             int colorValue = Color.rgb(colorR, colorG, colorB); 
             
@@ -461,15 +436,11 @@ class NexusRS extends RenderScriptScene implements
 
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
 
-        if (key.equals("colorScheme")) {
-            int newPreset = Integer.valueOf(sharedPreferences.getString(key, "0"));
-            if (newPreset != mCurrentPreset) {
-                mCurrentPreset = newPreset;
-                makeNewState();
-                mState.data(mWorldState);
-            }
-
-        } else if (key.equals("background")) {
+        if (key.equals("nexus_colorscheme")) {
+            mPreset = buildColors();
+            makeNewState();
+            mState.data(mWorldState);
+        } else if (key.equals("nexus_background")) {
             setDirty(true);
         }
     }

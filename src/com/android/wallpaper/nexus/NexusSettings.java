@@ -19,16 +19,28 @@ package com.android.wallpaper.nexus;
 import com.android.wallpaper.R;
 
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.preference.PreferenceGroup;
 import android.service.wallpaper.WallpaperSettingsActivity;
+import android.util.Log;
 
-public class NexusSettings extends WallpaperSettingsActivity {
+public class NexusSettings extends WallpaperSettingsActivity 
+	implements SharedPreferences.OnSharedPreferenceChangeListener {
+
+	public static final String COLORSCHEME_PREF = "nexus_colorscheme";
+	private static final String COLOR0_PREF = "color0";
+	private static final String COLOR1_PREF = "color1";
+	private static final String COLOR2_PREF = "color2";
+	private static final String COLOR3_PREF = "color3";
 
 	protected void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 		getPreferenceManager().setSharedPreferencesName(
 				NexusWallpaper.SHARED_PREFS_NAME);
 		addPreferencesFromResource(R.xml.nexus_prefs);
+		final PreferenceGroup parentPreference = getPreferenceScreen();
+		parentPreference.getSharedPreferences().registerOnSharedPreferenceChangeListener(this);
 	}
 
 	protected void onResume() {
@@ -38,4 +50,27 @@ public class NexusSettings extends WallpaperSettingsActivity {
 	protected void onDestroy() {
 		super.onDestroy();
 	}
+
+	public void onSharedPreferenceChanged(SharedPreferences preferences, String key) {
+		if (COLORSCHEME_PREF.equals(key)) {
+			final Resources res = this.getResources();
+			final String[] colorscheme = res.getStringArray(res.getIdentifier("nexus_colorscheme_" + 
+				preferences.getString(key, "softblues"), "array", "com.android.wallpaper"));
+
+			SharedPreferences.Editor editor = preferences.edit();
+			editor.putString(COLOR0_PREF, colorscheme[0]);
+			editor.putString(COLOR1_PREF, colorscheme[1]);
+			editor.putString(COLOR2_PREF, colorscheme[2]);
+			editor.putString(COLOR3_PREF, colorscheme[3]);
+			editor.commit();
+
+			Log.d("Nexus LWP", "colorScheme="+preferences.getString(key, "none"));
+
+			Log.d("Nexus LWP", "color0="+colorscheme[0]);
+			Log.d("Nexus LWP", "color1="+colorscheme[1]);
+			Log.d("Nexus LWP", "color2="+colorscheme[2]);
+			Log.d("Nexus LWP", "color3="+colorscheme[3]);
+		}
+	}
+
 }

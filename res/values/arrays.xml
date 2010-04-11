@@ -50,66 +50,66 @@
     <item>Soft Blues</item>
   </string-array>
   <string-array name="nexus_colorscheme_ids" translatable="false">
-    <item>0</item>
-    <item>1</item>
-    <item>2</item>
-    <item>3</item>
-    <item>4</item>
-    <item>5</item>
-    <item>6</item>
-    <item>7</item>
+    <item>dust</item>
+    <item>nexus</item>
+    <item>sexynexus</item>
+    <item>cyanogenmod</item>
+    <item>candy</item>
+    <item>zion</item>
+    <item>red</item>
+    <item>softblues</item>
   </string-array>
   
-  <string-array name="nexus_colorscheme_0" translatable="false">
+  <string-array name="nexus_colorscheme_dust" translatable="false">
     <item>#232326</item>
     <item>#2D3737</item>
     <item>#80735F</item>
     <item>#B8A07E</item>
   </string-array>
 
-  <string-array name="nexus_colorscheme_1" translatable="false">
+  <string-array name="nexus_colorscheme_nexus" translatable="false">
   	<item>#FF0000</item>
   	<item>#009900</item>
   	<item>#0066CC</item>
   	<item>#FFCC00</item>
   </string-array>
   
-  <string-array name="nexus_colorscheme_2" translatable="false">
+  <string-array name="nexus_colorscheme_sexynexus" translatable="false">
   	<item>#551A8B</item>
   	<item>#FF0000</item>
   	<item>#FF51CC</item>
   	<item>#ACD1E8</item>
   </string-array>
   
-  <string-array name="nexus_colorscheme_3" translatable="false">
+  <string-array name="nexus_colorscheme_cyanogenmod" translatable="false">
   	<item>#16F0F1</item>
   	<item>#16F0F1</item>
   	<item>#16F0F1</item>
   	<item>#16F0F1</item>
   </string-array>
 
-  <string-array name="nexus_colorscheme_4" translatable="false">
+  <string-array name="nexus_colorscheme_candy" translatable="false">
     <item>#471045</item>
     <item>#BD2056</item>
     <item>#FFD300</item>
     <item>#648C02</item>
   </string-array>
 
-  <string-array name="nexus_colorscheme_5" translatable="false">
+  <string-array name="nexus_colorscheme_zion" translatable="false">
     <item>#CC5D37</item>
     <item>#FFA750</item>
     <item>#182629</item>
     <item>#696832</item>
   </string-array>
 
-  <string-array name="nexus_colorscheme_6" translatable="false">
+  <string-array name="nexus_colorscheme_red" translatable="false">
     <item>#E61A1A</item>
     <item>#E61A1A</item>
     <item>#E61A1A</item>
     <item>#E61A1A</item>
   </string-array>
 
-  <string-array name="nexus_colorscheme_7" translatable="false">
+  <string-array name="nexus_colorscheme_softblues" translatable="false">
     <item>#66CCDD</item>
     <item>#3366AA</item>
     <item>#6699AA</item>
