@@ -48,6 +48,7 @@
     <item>Zion</item>
     <item>Sholes Red</item>
     <item>Soft Blues</item>
+    <item>Mau5</item>
   </string-array>
   <string-array name="nexus_colorscheme_ids" translatable="false">
     <item>dust</item>
@@ -58,6 +59,7 @@
     <item>zion</item>
     <item>red</item>
     <item>softblues</item>
+    <item>mau5</item>
   </string-array>
   
   <string-array name="nexus_colorscheme_dust" translatable="false">
@@ -66,7 +68,14 @@
     <item>#80735F</item>
     <item>#B8A07E</item>
   </string-array>
-
+  
+  <string-array name="nexus_colorscheme_mau5" translateable="false">
+      <item>#26ffff</item>
+      <item>#26ffff</item>
+      <item>#666666</item>
+      <item>#474747</item>
+  </string-array>
+  
   <string-array name="nexus_colorscheme_nexus" translatable="false">
   	<item>#FF0000</item>
   	<item>#009900</item>
