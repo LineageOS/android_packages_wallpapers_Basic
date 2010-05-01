@@ -294,31 +294,6 @@ class NexusRS extends RenderScriptScene implements
         mWorldState = new WorldState();
         mWorldState.mode = 0; // standard nexus mode
 
-        /* Try to load a user-specified colorscheme */
-
-        try {
-            mCurrentPreset = Integer.valueOf(mPrefs.getString("colorScheme", "-1"));
-        } catch (NumberFormatException e) {
-            mCurrentPreset = -1; // We check this again later.
-        }
-
-        try {
-            mWorldState.mode = mResources.getInteger(R.integer.nexus_mode);
-        } catch (Resources.NotFoundException exc) {
-            mWorldState.mode = 0; // standard nexus mode
-        }
-
-        /*
-         * Sholes devices may specify nexus_mode=1 which means they want to use
-         * the "sholes red" colorscheme. 
-         */
-        if (mWorldState.mode == 1 && mCurrentPreset == -1) {
-            mCurrentPreset = 6; // Sholes Red
-        } else if (mWorldState.mode == 0 && mCurrentPreset == -1) {
-            mCurrentPreset = DEFAULT_PRESET;
-        }
-
->>>>>>> 34c69874e9157f9e613e83866dc6bde3d6811d49
         makeNewState();
 
         mStateType = Type.createFromClass(mRS, WorldState.class, 1, "WorldState");
