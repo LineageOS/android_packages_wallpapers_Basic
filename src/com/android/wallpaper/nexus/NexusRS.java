@@ -401,9 +401,14 @@ class NexusRS extends RenderScriptScene implements
     public Bundle onCommand(String action, int x, int y, int z, Bundle extras,
             boolean resultRequested) {
 
-        final int dw = mWorldState.width;
-        final int bw = 960;
-        x = (int) (x + mWorldState.xOffset * (bw - dw));
+        if (mWorldState.rotate == 0) {
+            // nexus.rs ignores the xOffset when rotated; we shall endeavor to do so as well
+            x = (int) (x + mWorldState.xOffset * mWorldState.width);
+        }
+
+        // android.util.Log.d("NexusRS", String.format(
+        //     "width=%d, xOffset=%g, x=%d",
+        //     mWorldState.width, mWorldState.xOffset, x));
 
         if ("android.wallpaper.tap".equals(action)) {
             IHardwareService hardware = IHardwareService.Stub.asInterface(ServiceManager.getService("hardware"));
