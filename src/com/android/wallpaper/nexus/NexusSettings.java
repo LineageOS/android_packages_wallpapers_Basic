@@ -55,7 +55,7 @@ public class NexusSettings extends WallpaperSettingsActivity
 		if (COLORSCHEME_PREF.equals(key)) {
 			final Resources res = this.getResources();
 			final String[] colorscheme = res.getStringArray(res.getIdentifier("nexus_colorscheme_" + 
-				preferences.getString(key, "softblues"), "array", "com.android.wallpaper"));
+				preferences.getString(key, "mau5"), "array", "com.android.wallpaper"));
 
 			SharedPreferences.Editor editor = preferences.edit();
 			editor.putString(COLOR0_PREF, colorscheme[0]);
