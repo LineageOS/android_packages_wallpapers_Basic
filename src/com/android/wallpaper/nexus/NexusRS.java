@@ -62,7 +62,7 @@ class NexusRS extends RenderScriptScene implements
 
     private final BitmapFactory.Options mOptionsARGB = new BitmapFactory.Options();
 
-    private static final String DEFAULT_BACKGROUND = "mau5";
+    private static final String DEFAULT_BACKGROUND = "carbonfiber";
 
     private static Context mContext;
 
