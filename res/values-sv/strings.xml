@@ -38,6 +38,15 @@
     <string name="wallpaper_nexus" msgid="3789061608411260304">"Nexus"</string>
     <string name="wallpaper_nexus_author" msgid="8492858637541249441">"Google"</string>
     <string name="wallpaper_nexus_desc" msgid="5562598238151885905">"Kika in i det neurala nätverket."</string>
+    <string name="wallpaper_darknexus">Mörk Nexus</string>
+    <string name="wallpaper_darknexus_author">Chris Soyars</string>
+    <string name="wallpaper_darknexus_desc">Kika in i det mörka, neurala nätverket.</string>
+    <string name="wallpaper_sexynexus">Sexig Nexus</string>
+    <string name="wallpaper_sexynexus_author">Chris Soyars</string>
+    <string name="wallpaper_sexynexus_desc">Kika in i det neurala nätverket, tjejer.</string>
+    <string name="nexus_settings">Nexus bakgrundsinställningar</string>
+    <string name="nexus_colorscheme">Färgschema</string>
+    <string name="nexus_background">Bakgrund</string>
     <string name="clock_settings" msgid="7837858747417927288">"Inställningar för polarklocka"</string>
     <string name="show_seconds" msgid="8525899907567218168">"Visa sekunder"</string>
     <string name="variable_line_width" msgid="8487094734462263605">"Olika ringstorlekar"</string>
