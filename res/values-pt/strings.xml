@@ -50,4 +50,17 @@
     <string name="palette_halloween" msgid="1502590278217616811">"Halloween"</string>
     <string name="palette_zenburn" msgid="5537306782860767365">"Salada de frutas alienígena"</string>
     <string name="palette_oceanic" msgid="7336134088073550028">"Laser azul"</string>
+    <string name="wallpaper_darknexus">DarkNexus</string>
+    <string name="wallpaper_darknexus_author">Chris Soyars</string>
+    <string name="wallpaper_darknexus_desc">
+        Uma espiada dentro da rede neural escura.
+    </string>
+    <string name="wallpaper_sexynexus">SexyNexus</string>
+    <string name="wallpaper_sexynexus_author">Chris Soyars</string>
+    <string name="wallpaper_sexynexus_desc">
+        Uma espiada dentro da rede neural (feminino).
+    </string>
+    <string name="nexus_settings">Configurações de plano de fundo Nexus</string>
+    <string name="nexus_colorscheme">Esquema de cor</string>
+    <string name="nexus_background">Plano de fundo</string>
 </resources>
