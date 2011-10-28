@@ -50,4 +50,8 @@
     <string name="palette_halloween" msgid="1502590278217616811">"南瓜派"</string>
     <string name="palette_zenburn" msgid="5537306782860767365">"异国情调的水果沙拉"</string>
     <string name="palette_oceanic" msgid="7336134088073550028">"蓝色激光"</string>
+
+    <string name="nexus_settings">Nexus 壁纸设置</string>
+    <string name="nexus_colorscheme">颜色方案</string>
+    <string name="nexus_background">背景</string>
 </resources>
