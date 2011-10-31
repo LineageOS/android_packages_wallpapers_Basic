@@ -446,7 +446,8 @@ class NexusRS extends RenderScriptScene implements
         if (key.startsWith("color") || key.equals("nexus_colorscheme")) {
             mPreset = buildColors();
             makeNewState();
-            mState.data(mWorldState);
+            if(!isDirty())
+                mState.data(mWorldState);
         } else if (key.equals("nexus_background")) {
             setDirty(true);
         }
