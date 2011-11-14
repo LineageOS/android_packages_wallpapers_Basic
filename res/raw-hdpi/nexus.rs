@@ -156,7 +156,6 @@ void drawPulses(struct pulse_s * pulseSet, int setSize) {
 	            }
 	        } else if (p->dx > 0) {
 				x += PULSE_SIZE; // need to start on the other side of this cell
-	            matrixRotate(matrix, 180.0f, 0.0f, 0.0f, 1.0f);
 	            vpLoadTextureMatrix(matrix);
 	            float xx = x - (TRAIL_SIZE * PULSE_SIZE);
 	 	        if (xx >= State->width * 2) {
@@ -164,7 +163,7 @@ void drawPulses(struct pulse_s * pulseSet, int setSize) {
 	            } else {
 	                setColor(p->color);
 	                bindTexture(NAMED_PFTexture, 0, NAMED_TPulse);
-	                drawRect(xx, y, x, y + PULSE_SIZE, 0.0f);
+	                drawRect(x, y, xx, y + PULSE_SIZE, 0.0f);
 	                bindTexture(NAMED_PFTexture, 0, NAMED_TGlow);
 	                drawRect(x - HALF_PULSE_SIZE - HALF_GLOW_SIZE,
 	                    y + HALF_PULSE_SIZE - HALF_GLOW_SIZE,
@@ -173,15 +172,14 @@ void drawPulses(struct pulse_s * pulseSet, int setSize) {
 	                    0.0f);
 	            }
 	        } else if (p->dy < 0) {
-	            matrixRotate(matrix, -90.0f, 0.0f, 0.0f, 1.0f);
 	            vpLoadTextureMatrix(matrix);
 	            float yy = y + (TRAIL_SIZE * PULSE_SIZE);
 	            if (yy <= 0) {
 	               initPulse(p, p->pulseType);
 	            } else {
 	                setColor(p->color);
-	                bindTexture(NAMED_PFTexture, 0, NAMED_TPulse);
-	                drawRect(x, y, x + PULSE_SIZE, yy, 0.0f);
+	                bindTexture(NAMED_PFTexture, 0, NAMED_TPulseVert);
+	                drawRect(x, yy, x + PULSE_SIZE, y, 0.0f);
 	                bindTexture(NAMED_PFTexture, 0, NAMED_TGlow);
 	                drawRect(x + HALF_PULSE_SIZE - HALF_GLOW_SIZE,
 	                    y + HALF_PULSE_SIZE - HALF_GLOW_SIZE,
@@ -191,14 +189,13 @@ void drawPulses(struct pulse_s * pulseSet, int setSize) {
 	            }
 	        } else if (p->dy > 0) {
 				y += PULSE_SIZE; // need to start on the other side of this cell
-	            matrixRotate(matrix, 90.0f, 0.0f, 0.0f, 1.0f);
 	            vpLoadTextureMatrix(matrix);
 	            float yy = y - (TRAIL_SIZE * PULSE_SIZE);
 	            if (yy >= State->height) {
 	               initPulse(p, p->pulseType);
 	            } else {
 	                setColor(p->color);
-	                bindTexture(NAMED_PFTexture, 0, NAMED_TPulse);
+	                bindTexture(NAMED_PFTexture, 0, NAMED_TPulseVert);
 	                drawRect(x, yy, x + PULSE_SIZE, y, 0.0f);
 	                bindTexture(NAMED_PFTexture, 0, NAMED_TGlow);
 	                drawRect(x + HALF_PULSE_SIZE - HALF_GLOW_SIZE,
