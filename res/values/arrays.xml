@@ -71,7 +71,7 @@
     <item>#B8A07E</item>
   </string-array>
   
-  <string-array name="nexus_colorscheme_mau5" translateable="false">
+  <string-array name="nexus_colorscheme_mau5" translatable="false">
       <item>#26ffff</item>
       <item>#26ffff</item>
       <item>#666666</item>
