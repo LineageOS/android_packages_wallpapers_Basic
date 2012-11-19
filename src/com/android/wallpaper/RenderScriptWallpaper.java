@@ -89,7 +89,7 @@ public abstract class RenderScriptWallpaper<T extends RenderScriptScene> extends
         @Override
         public void onOffsetsChanged(float xOffset, float yOffset,
                 float xStep, float yStep, int xPixels, int yPixels) {
-            mRenderer.setOffset(xOffset, yOffset, xPixels, yPixels);
+            if (mRenderer != null) mRenderer.setOffset(xOffset, yOffset, xPixels, yPixels);
         }
 
         @Override
@@ -110,7 +110,11 @@ public abstract class RenderScriptWallpaper<T extends RenderScriptScene> extends
         @Override
         public Bundle onCommand(String action, int x, int y, int z,
                 Bundle extras, boolean resultRequested) {
-            return mRenderer.onCommand(action, x, y, z, extras, resultRequested);
+            if (mRenderer != null) {
+                return mRenderer.onCommand(action, x, y, z, extras, resultRequested);
+            } else {
+                return null;
+            }
         }
 
     }

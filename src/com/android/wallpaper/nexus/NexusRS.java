@@ -44,11 +44,20 @@ class NexusRS extends RenderScriptScene {
 
     private ProgramVertexFixedFunction.Constants mPvOrthoAlloc;
 
+    private int mInitialWidth;
+    private int mInitialHeight;
+    private float mWorldScaleX;
+    private float mWorldScaleY;
     private float mXOffset;
     private ScriptC_nexus mScript;
 
     public NexusRS(int width, int height) {
         super(width, height);
+
+        mInitialWidth = width;
+        mInitialHeight = height;
+        mWorldScaleX = 1.0f;
+        mWorldScaleY = 1.0f;
 
         mOptionsARGB.inScaled = false;
         mOptionsARGB.inPreferredConfig = Bitmap.Config.ARGB_8888;
@@ -70,6 +79,11 @@ class NexusRS extends RenderScriptScene {
         super.resize(width, height); // updates mWidth, mHeight
 
         // android.util.Log.d("NexusRS", String.format("resize(%d, %d)", width, height));
+
+        mWorldScaleX = (float)mInitialWidth / width;
+        mWorldScaleY = (float)mInitialHeight / height;
+        mScript.set_gWorldScaleX(mWorldScaleX);
+        mScript.set_gWorldScaleY(mWorldScaleY);
     }
 
     @Override
@@ -100,6 +114,8 @@ class NexusRS extends RenderScriptScene {
         mScript.set_gIsPreview(isPreview() ? 1 : 0);
         mScript.set_gMode(mode);
         mScript.set_gXOffset(0.f);
+        mScript.set_gWorldScaleX(mWorldScaleX);
+        mScript.set_gWorldScaleY(mWorldScaleY);
     }
 
     private Allocation loadTexture(int id) {
@@ -161,7 +177,7 @@ class NexusRS extends RenderScriptScene {
 
         if (mWidth < mHeight) {
             // nexus.rs ignores the xOffset when rotated; we shall endeavor to do so as well
-            x = (int) (x + mXOffset * mWidth);
+            x = (int) (x + mXOffset * mWidth / mWorldScaleX);
         }
 
         // android.util.Log.d("NexusRS", String.format(

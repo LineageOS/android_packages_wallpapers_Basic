@@ -35,7 +35,7 @@
     <string name="wallpaper_clock" msgid="6555051461698958610">"极地时钟"</string>
     <string name="wallpaper_clock_author" msgid="8779094427834551330">"Google"</string>
     <string name="wallpaper_clock_desc" msgid="6767980298898740026">"以顺时针圆弧的形式显示日期和时间：月、日、小时、分和秒。"</string>
-    <string name="wallpaper_nexus" msgid="3789061608411260304">"线性光幕效果"</string>
+    <string name="wallpaper_nexus" msgid="3789061608411260304">"交错光幕"</string>
     <string name="wallpaper_nexus_author" msgid="8492858637541249441">"Google"</string>
     <string name="wallpaper_nexus_desc" msgid="5562598238151885905">"神经网络之一斑。"</string>
     <string name="clock_settings" msgid="7837858747417927288">"极地时钟设置"</string>

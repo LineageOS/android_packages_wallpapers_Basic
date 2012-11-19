@@ -52,6 +52,8 @@ static int gWidth;
 static int gHeight;
 static int gRotate;
 
+float gWorldScaleX;
+float gWorldScaleY;
 float gXOffset;
 int gIsPreview;
 int gMode;
@@ -168,7 +170,7 @@ static void drawPulses(pulse_t * pulseSet, int setSize) {
             } else {
                  rsMatrixTranslate(&modelMatrix, -(gXOffset * gWidth), 0, 0);
             }
-            rsMatrixScale(&modelMatrix, p->scale, p->scale, 1.0f);
+            rsMatrixScale(&modelMatrix, p->scale * gWorldScaleX, p->scale * gWorldScaleY, 1.0f);
             rsgProgramVertexLoadModelMatrix(&modelMatrix);
 
            float x = p->originX + (p->dx * SPEED * delta);
@@ -305,6 +307,7 @@ int root() {
 
     rs_matrix4x4 matrix;
     rsMatrixLoadIdentity(&matrix);
+    rsMatrixScale(&matrix, gWorldScaleX, gWorldScaleY, 1.0f);
 
     if (gRotate) {
         //matrixLoadRotate(matrix, 90.0f, 0.0f, 0.0f, 1.0f);
