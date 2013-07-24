@@ -276,7 +276,9 @@ class GrassRS extends RenderScriptScene {
     }
 
     private Allocation loadTexture(int id) {
-        return Allocation.createFromBitmapResource(mRS, mResources, id);
+        return Allocation.createFromBitmapResource(mRS, mResources, id,
+                                           Allocation.MipmapControl.MIPMAP_NONE,
+                                           Allocation.USAGE_GRAPHICS_TEXTURE);
     }
 
     private void createProgramFragment() {

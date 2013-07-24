@@ -119,12 +119,16 @@ class NexusRS extends RenderScriptScene {
     }
 
     private Allocation loadTexture(int id) {
-        return Allocation.createFromBitmapResource(mRS, mResources, id);
+        return Allocation.createFromBitmapResource(mRS, mResources, id,
+                                           Allocation.MipmapControl.MIPMAP_NONE,
+                                           Allocation.USAGE_GRAPHICS_TEXTURE);
     }
 
     private Allocation loadTextureARGB(int id) {
         Bitmap b = BitmapFactory.decodeResource(mResources, id, mOptionsARGB);
-        return Allocation.createFromBitmap(mRS, b);
+        return Allocation.createFromBitmap(mRS, b,
+                                           Allocation.MipmapControl.MIPMAP_NONE,
+                                           Allocation.USAGE_GRAPHICS_TEXTURE);
     }
 
 

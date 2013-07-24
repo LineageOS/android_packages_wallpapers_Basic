@@ -240,13 +240,17 @@ class FallRS extends RenderScriptScene {
     }
 
     private Allocation loadTexture(int id) {
-        final Allocation allocation = Allocation.createFromBitmapResource(mRS, mResources, id);
+        final Allocation allocation = Allocation.createFromBitmapResource(mRS, mResources, id,
+                                           Allocation.MipmapControl.MIPMAP_NONE,
+                                           Allocation.USAGE_GRAPHICS_TEXTURE);
         return allocation;
     }
 
     private Allocation loadTextureARGB(int id) {
         Bitmap b = BitmapFactory.decodeResource(mResources, id, mOptionsARGB);
-        final Allocation allocation = Allocation.createFromBitmap(mRS, b);
+        final Allocation allocation = Allocation.createFromBitmap(mRS, b,
+                                           Allocation.MipmapControl.MIPMAP_NONE,
+                                           Allocation.USAGE_GRAPHICS_TEXTURE);
         return allocation;
     }
 
