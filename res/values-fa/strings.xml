@@ -19,7 +19,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="wallpapers" msgid="7890805662847963863">"تصاویر زمینه زنده Android"</string>
+    <string name="wallpapers" msgid="7890805662847963863">"‏تصاویر زمینه زنده Android"</string>
     <string name="wallpaper_walkaround" msgid="5548084303782181478">"مشاهده از طریق"</string>
     <string name="wallpaper_walkaround_author" msgid="7292960549371044078">"Google"</string>
     <string name="wallpaper_walkaround_desc" msgid="1714824320382778730">"از طریق گوشی خود ببینید و بدون بروز تصادفات خطرناک به اطراف حرکت کنید."</string>
@@ -31,7 +31,7 @@
     <string name="wallpaper_galaxy_desc" msgid="6816969378845338629">"کهکشانی متشکل از ستاره هایی که آهسته می‌چرخند."</string>
     <string name="wallpaper_fall" msgid="1500920940722360941">"آب"</string>
     <string name="wallpaper_fall_author" msgid="8860429843949521342">"Google"</string>
-    <string name="wallpaper_fall_desc" msgid="595888373487204297">"ریزش برگ های پاییزی&lt;br&gt; به استخر دارای آب های مواج زیر: &lt;br&gt; پس‌زمینه مایع"</string>
+    <string name="wallpaper_fall_desc" msgid="595888373487204297">"‏ریزش برگ های پاییزی&lt;br&gt; به استخر دارای آب های مواج زیر: &lt;br&gt; پس‌زمینه مایع"</string>
     <string name="wallpaper_clock" msgid="6555051461698958610">"ساعت قطبی"</string>
     <string name="wallpaper_clock_author" msgid="8779094427834551330">"Google"</string>
     <string name="wallpaper_clock_desc" msgid="6767980298898740026">"تاریخ و زمان را به صورت کمان های در جهت عقربه های ساعت نشان می‌دهد: ماه، روز، ساعت، دقیقه و ثانیه"</string>

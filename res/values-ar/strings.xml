@@ -19,7 +19,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="wallpapers" msgid="7890805662847963863">"خلفيات Android المتحركة"</string>
+    <string name="wallpapers" msgid="7890805662847963863">"‏خلفيات Android المتحركة"</string>
     <string name="wallpaper_walkaround" msgid="5548084303782181478">"شفاف"</string>
     <string name="wallpaper_walkaround_author" msgid="7292960549371044078">"Google"</string>
     <string name="wallpaper_walkaround_desc" msgid="1714824320382778730">"استكشف الهاتف وتصفحه بدون وقوع حوادث."</string>
@@ -31,7 +31,7 @@
     <string name="wallpaper_galaxy_desc" msgid="6816969378845338629">"مجرة مكونة من نجوم تدور ببطء."</string>
     <string name="wallpaper_fall" msgid="1500920940722360941">"مياه"</string>
     <string name="wallpaper_fall_author" msgid="8860429843949521342">"Google"</string>
-    <string name="wallpaper_fall_desc" msgid="595888373487204297">"تساقط أوراق الأشجار في الخريف&lt;br&gt;إلى البحيرة المتموجة بالأسفل:&lt;br&gt; خلفية زن سائلة"</string>
+    <string name="wallpaper_fall_desc" msgid="595888373487204297">"‏تساقط أوراق الأشجار في الخريف&lt;br&gt;إلى البحيرة المتموجة بالأسفل:&lt;br&gt; خلفية زن سائلة"</string>
     <string name="wallpaper_clock" msgid="6555051461698958610">"ساعة قطبية"</string>
     <string name="wallpaper_clock_author" msgid="8779094427834551330">"Google"</string>
     <string name="wallpaper_clock_desc" msgid="6767980298898740026">"لتقديم التاريخ والوقت كأقواس في اتجاه عقارب الساعة: الشهر، اليوم، الساعة، الدقيقة، الثانية."</string>
