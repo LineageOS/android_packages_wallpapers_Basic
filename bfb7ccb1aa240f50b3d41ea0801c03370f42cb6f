@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_1509232d",
+        "filename": "src/com/android/wallpaper/grass/GrassRS.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2014-06-17T22:28:24Z",
+      "side": 1,
+      "message": "No, never do that. Try to detect if the provider is enabled with mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);",
+      "revId": "bfb7ccb1aa240f50b3d41ea0801c03370f42cb6f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
