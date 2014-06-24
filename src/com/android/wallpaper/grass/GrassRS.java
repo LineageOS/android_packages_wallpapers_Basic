@@ -97,7 +97,7 @@ class GrassRS extends RenderScriptScene {
             mLocationUpdater = new LocationUpdater();
             try {
               if (mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER)){
-              	mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
+                  mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
                       LOCATION_UPDATE_MIN_TIME, LOCATION_UPDATE_MIN_DISTANCE, mLocationUpdater);
               }
             } catch (java.lang.Exception e) {
