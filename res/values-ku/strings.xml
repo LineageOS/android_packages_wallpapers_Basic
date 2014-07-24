@@ -18,19 +18,53 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="wallpapers">پاشبنەماکانی زیندووی ئەندرۆید</string>
+  <string name="wallpaper_walkaround">چاو خستنەسەر</string>
   <string name="wallpaper_walkaround_author">گووگڵ</string>
+  <string name="wallpaper_walkaround_desc">
+        چاو خستنەسەر تەلەفۆن و ڕۆیشتن بۆ دەوروپشت بێ مەترسی لە پێکدادانەکان.
+    </string>
   <string name="wallpaper_grass">گیا</string>
   <string name="wallpaper_grass_author">گووگڵ</string>
+  <string name="wallpaper_grass_desc">
+        شەپۆلی گەڵا لە پێش هەتاو و ئاسمانی شەو.
+    </string>
   <string name="wallpaper_galaxy">گەلەستێرە</string>
   <string name="wallpaper_galaxy_author">گووگڵ</string>
+  <string name="wallpaper_galaxy_desc">
+        گەلەستێرەیەک کە پێکهاتووە لە گێژاوێکی هێواشی ئەستێرەکان.
+    </string>
   <string name="wallpaper_fall">ئاو</string>
   <string name="wallpaper_fall_author">گووگڵ</string>
-  <string name="wallpaper_clock">کاتژمێری بەرانبەر</string>
+  <string name="wallpaper_fall_desc">
+        گەڵاڕێزانی خەزان&lt;br&gt;
+        شەپۆلی بازنەیی گۆماو:&lt;br&gt;
+        پاشبنەمای ئاوی ڕاساو
+    </string>
+  <string name="wallpaper_clock">کاژێری بەرانبەر</string>
   <string name="wallpaper_clock_author">گووگڵ</string>
+  <string name="wallpaper_clock_desc">
+        بەروار و کات دەردەخات بە بەئاڕاستەی میلی کاژێر: مانگ,
+        ڕٶ, کاتکۆ, خولەک, لەگەڵ چرکە.
+    </string>
   <string name="wallpaper_nexus">نێکسەس</string>
   <string name="wallpaper_nexus_author">گووگڵ</string>
+  <string name="wallpaper_nexus_desc">
+        چاوخشکانێک بۆ خانەکانی مێشک.
+    </string>
+  <string name="clock_settings">ڕێکخستنەکانی کاژێری جەمسەری</string>
   <string name="show_seconds">پیشاندانی چرکەکان</string>
+  <string name="variable_line_width">چەند بازنەی فراوانی زۆر</string>
+  <string name="palette">پالێتی ڕەنگ</string>
   <string name="palette_gray">ئاسن</string>
   <string name="palette_violet">نیوەشەو</string>
   <string name="palette_matrix">شاشەی سەوز</string>
+  <string name="palette_white_c">ورچی جەمسەری (جووڵاو)</string>
+  <string name="palette_black_c">چاڵی ڕه‌ش ( جووڵه‌دار )</string>
+  <string name="palette_halloween">كولێرەى كوولەكە
+
+
+</string>
+  <string name="palette_zenburn">زەڵاتەى ميوەی بيانى</string>
+  <string name="palette_oceanic">لێزه‌ری شین</string>
 </resources>
