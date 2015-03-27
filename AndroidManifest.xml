@@ -30,7 +30,7 @@
 
     <application
         android:label="@string/wallpapers"
-        android:icon="@drawable/ic_launcher_wallpaper">
+        android:icon="@mipmap/ic_launcher_wallpaper">
 
         <activity
             android:label="@string/clock_settings"
