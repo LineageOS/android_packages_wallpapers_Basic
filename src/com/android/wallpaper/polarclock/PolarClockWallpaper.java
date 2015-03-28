@@ -462,6 +462,10 @@ public class PolarClockWallpaper extends WallpaperService {
                 return;
             }
 
+            if (!mVisible) {
+                return;
+            }
+
             final SurfaceHolder holder = getSurfaceHolder();
             final Rect frame = holder.getSurfaceFrame();
             final int width = frame.width();
