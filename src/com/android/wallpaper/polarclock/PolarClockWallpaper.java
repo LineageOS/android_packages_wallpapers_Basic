@@ -462,6 +462,11 @@ public class PolarClockWallpaper extends WallpaperService {
                 return;
             }
 
+            if (!mVisible) {
+                Log.w("PolarClockWallpaper", "won't draw on an invisible surface");
+                return;
+            }
+
             final SurfaceHolder holder = getSurfaceHolder();
             final Rect frame = holder.getSurfaceFrame();
             final int width = frame.width();
