@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ac665da_12ddbf14",
+        "filename": "src/com/android/wallpaper/polarclock/PolarClockWallpaper.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 3134
+      },
+      "writtenOn": "2015-03-29T23:40:37Z",
+      "side": 1,
+      "message": "IMHO, this log isn\u0027t relevant (even is just and informational event not a warning) and will flood the device log.",
+      "revId": "8d0f0f3be4cd849f6ab3cda83084a76900590d6a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
