@@ -18,6 +18,23 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- General -->
+  <!-- Application name -->
+  <!-- Wallpapers: -->
+  <!-- Wallpaper showing the camera preview -->
+  <!-- Wallpaper showing a clock -->
+  <!-- Polar clock: title of settings activity -->
+  <!-- Polar clock: label for "show seconds" pref -->
   <string name="show_seconds">Montri sekundojn</string>
+  <!-- Polar clock: label for "variable widths" pref -->
+  <!-- Polar clock: label for "palette" pref -->
+  <!-- Polar clock: palette name -->
+  <!-- Polar clock: palette name -->
   <string name="palette_violet">Noktomezo</string>
+  <!-- Polar clock: palette name -->
+  <!-- Polar clock: palette name -->
+  <!-- Polar clock: palette name -->
+  <!-- Polar clock: palette name -->
+  <!-- Polar clock: palette name -->
+  <!-- Polar clock: palette name -->
 </resources>
