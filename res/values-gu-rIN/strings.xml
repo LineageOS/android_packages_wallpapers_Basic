@@ -27,7 +27,7 @@
     <string name="wallpaper_clock_author" msgid="8779094427834551330">"Google"</string>
     <string name="wallpaper_clock_desc" msgid="6767980298898740026">"દક્ષિણાવર્ત ચાપ તરીકે તારીખ અને સમય પ્રસ્તુત કરે છે: મહિનો, દિવસ, કલાક, મિનિટ અને સેકંડ."</string>
     <string name="clock_settings" msgid="7837858747417927288">"ધ્રુવીય ઘડિયાળ સેટિંગ્સ"</string>
-    <string name="show_seconds" msgid="8525899907567218168">"સેકંડ દર્શાવો"</string>
+    <string name="show_seconds" msgid="8525899907567218168">"સેકંડ બતાવો"</string>
     <string name="variable_line_width" msgid="8487094734462263605">"રિંગની પહોળાઈ બદલાય છે"</string>
     <string name="palette" msgid="1636154448241520718">"રંગ મિશ્રણ"</string>
     <string name="palette_gray" msgid="4575370050214496017">"આયર્ન"</string>
