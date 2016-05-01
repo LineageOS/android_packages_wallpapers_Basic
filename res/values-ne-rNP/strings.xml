@@ -21,10 +21,10 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="wallpapers" msgid="7890805662847963863">"एन्ड्रोइड लाइभ ‍वालपेपर"</string>
     <string name="wallpaper_walkaround" msgid="5548084303782181478">"बाट हेर्नुहोस्"</string>
-    <string name="wallpaper_walkaround_author" msgid="7292960549371044078">"गुगल"</string>
+    <string name="wallpaper_walkaround_author" msgid="7292960549371044078">"Google"</string>
     <string name="wallpaper_walkaround_desc" msgid="1714824320382778730">"तपाईँको फोनबाट हेर्नुहोस् र दुर्घटनाको जोखिम नलिइ चारैतिर हिँड्नुहोस्।"</string>
     <string name="wallpaper_clock" msgid="6555051461698958610">"ध्रुवीय घडी"</string>
-    <string name="wallpaper_clock_author" msgid="8779094427834551330">"गुगल"</string>
+    <string name="wallpaper_clock_author" msgid="8779094427834551330">"Google"</string>
     <string name="wallpaper_clock_desc" msgid="6767980298898740026">"घडीको दिशाको चापमा मिति र सयम देखाउँछ: महिना, दिन, घन्टा, मिनेट र सेकेन्ड"</string>
     <string name="clock_settings" msgid="7837858747417927288">"ध्रुवीय घडी सेटिङ"</string>
     <string name="show_seconds" msgid="8525899907567218168">"सेकन्ड दिखाउनुहोस्"</string>
