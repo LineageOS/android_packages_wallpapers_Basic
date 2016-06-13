@@ -18,31 +18,48 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- General -->
+  <!-- Application name -->
   <string name="wallpapers">پاشبنەماکانی زیندووی ئەندرۆید</string>
+  <!-- Wallpapers: -->
+  <!-- Wallpaper showing the camera preview -->
   <string name="wallpaper_walkaround">چاو خستنەسەر</string>
   <string name="wallpaper_walkaround_author">Google</string>
   <string name="wallpaper_walkaround_desc">
         چاو خستنەسەر تەلەفۆن و ڕۆیشتن بۆ دەوروپشت بێ مەترسی لە پێکدادانەکان.
     </string>
+  <!-- Wallpaper showing a clock -->
   <string name="wallpaper_clock">کاژێری بەرانبەر</string>
   <string name="wallpaper_clock_author">Google</string>
   <string name="wallpaper_clock_desc">
         بەروار و کات دەردەخات بە بەئاڕاستەی میلی کاژێر: مانگ,
         ڕٶ, کاتکۆ, خولەک, لەگەڵ چرکە.
     </string>
+  <!-- Polar clock: title of settings activity -->
   <string name="clock_settings">ڕێکخستنەکانی کاژێری جەمسەری</string>
+  <!-- Polar clock: label for "show seconds" pref -->
   <string name="show_seconds">پیشاندانی چرکەکان</string>
+  <!-- Polar clock: label for "variable widths" pref -->
   <string name="variable_line_width">چەند بازنەی فراوانی زۆر</string>
+  <!-- Polar clock: label for "palette" pref -->
   <string name="palette">پالێتی ڕەنگ</string>
+  <!-- Polar clock: palette name -->
   <string name="palette_gray">ئاسن</string>
+  <!-- Polar clock: palette name -->
   <string name="palette_violet">نیوەشەو</string>
+  <!-- Polar clock: palette name -->
   <string name="palette_matrix">شاشەی سەوز</string>
+  <!-- Polar clock: palette name -->
   <string name="palette_white_c">ورچی جەمسەری (جووڵاو)</string>
+  <!-- Polar clock: palette name -->
   <string name="palette_black_c">چاڵی ڕه‌ش ( جووڵه‌دار )</string>
+  <!-- Polar clock: palette name -->
   <string name="palette_halloween">كولێرەى كوولەكە
 
 
 </string>
+  <!-- Polar clock: palette name -->
   <string name="palette_zenburn">زەڵاتەى ميوەی بيانى</string>
+  <!-- Polar clock: palette name -->
   <string name="palette_oceanic">لێزه‌ری شین</string>
 </resources>

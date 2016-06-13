@@ -20,43 +20,21 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- General -->
   <!-- Application name -->
-  <string name="wallpapers">Live-Hannergrondbiller fir Android</string>
   <!-- Wallpapers: -->
   <!-- Wallpaper showing the camera preview -->
-  <string name="wallpaper_walkaround">Duerchkucken</string>
-  <string name="wallpaper_walkaround_author">Google</string>
-  <string name="wallpaper_walkaround_desc">
-        Kuck duerch däin Telefon a laf ronderëm ouni Accidenter ze riskéieren.
-    </string>
   <!-- Wallpaper showing a clock -->
-  <string name="wallpaper_clock">Polarauer</string>
-  <string name="wallpaper_clock_author">Google</string>
-  <string name="wallpaper_clock_desc">
-        Presentéiert Datum an Auerzäit als Hallefkreeser: Mount,
-        Dag, Stonn, Minutt, a Sekonn.
-    </string>
   <!-- Polar clock: title of settings activity -->
-  <string name="clock_settings">Astellunge vun der Polarauer</string>
   <!-- Polar clock: label for "show seconds" pref -->
-  <string name="show_seconds">Sekonnen uweisen</string>
+  <string name="show_seconds">Montri sekundojn</string>
   <!-- Polar clock: label for "variable widths" pref -->
-  <string name="variable_line_width">Rankbreet variéieren</string>
   <!-- Polar clock: label for "palette" pref -->
-  <string name="palette">Faarfpalett</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_gray">Eisen</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_violet">Hallefnuecht</string>
+  <string name="palette_violet">Noktomezo</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_matrix">Grénge Schierm</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_white_c">Polarbier (dynamesch)</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_black_c">Schwaarzt Lach (dynamesch)</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_halloween">Kürbiskuch</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_zenburn">Ausserierdesch Uebstzalot</string>
   <!-- Polar clock: palette name -->
-  <string name="palette_oceanic">Bloe Laser</string>
 </resources>
