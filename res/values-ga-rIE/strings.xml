@@ -22,12 +22,9 @@
   <!-- Application name -->
   <!-- Wallpapers: -->
   <!-- Wallpaper showing the camera preview -->
-  <string name="wallpaper_walkaround_author">Google</string>
   <!-- Wallpaper showing a clock -->
-  <string name="wallpaper_clock_author">Google</string>
   <!-- Polar clock: title of settings activity -->
   <!-- Polar clock: label for "show seconds" pref -->
-  <string name="show_seconds">Montri sekundojn</string>
   <!-- Polar clock: label for "variable widths" pref -->
   <!-- Polar clock: label for "palette" pref -->
   <!-- Polar clock: palette name -->
