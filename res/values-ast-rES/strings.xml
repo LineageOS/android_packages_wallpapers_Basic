@@ -22,7 +22,14 @@
   <!-- Application name -->
   <!-- Wallpapers: -->
   <!-- Wallpaper showing the camera preview -->
+  <string name="wallpaper_walkaround_desc">
+        Mira pente\'l teléfonu y camina ensin peligru de tener accidentes.
+    </string>
   <!-- Wallpaper showing a clock -->
+  <string name="wallpaper_clock_desc">
+        Presenta la data y hora nun reló d\'arcos: mes,
+        día, hora, minutu y segundu.
+    </string>
   <!-- Polar clock: title of settings activity -->
   <!-- Polar clock: label for "show seconds" pref -->
   <!-- Polar clock: label for "variable widths" pref -->
