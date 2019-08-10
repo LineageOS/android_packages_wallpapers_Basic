@@ -18,21 +18,24 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- General -->
-  <!-- Application name -->
-  <!-- Wallpapers: -->
-  <!-- Wallpaper showing the camera preview -->
-  <!-- Wallpaper showing a clock -->
-  <!-- Polar clock: title of settings activity -->
-  <!-- Polar clock: label for "show seconds" pref -->
-  <!-- Polar clock: label for "variable widths" pref -->
-  <!-- Polar clock: label for "palette" pref -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
+    <string name="wallpapers">Papurau Wal Byw Android</string>
+    <string name="wallpaper_walkaround">Tryloyw</string>
+    <string name="wallpaper_walkaround_author">Google</string>
+    <string name="wallpaper_walkaround_desc">Gwela yn syth trwy dy ffôn a cherdded o gwmpas heb gael damweiniau.    </string>
+    <string name="wallpaper_clock">Cloc Pegynol</string>
+    <string name="wallpaper_clock_author">Google</string>
+    <string name="wallpaper_clock_desc">Mae\'n dangos y dyddiad ac amser fel arcau clocwedd:
+mis, diwrnod, awr, munud ac eiliad.    </string>
+    <string name="clock_settings">Gosodiadau cloc pegynol</string>
+    <string name="show_seconds">Dangos eiliadau</string>
+    <string name="variable_line_width">Lled cylchau amrywiol</string>
+    <string name="palette">Paled lliwiau</string>
+    <string name="palette_gray">Haearn</string>
+    <string name="palette_violet">Canol Nos</string>
+    <string name="palette_matrix">Sgrin Werdd</string>
+    <string name="palette_white_c">Arth Wen (deinamig)</string>
+    <string name="palette_black_c">Twll Du (deinamig)</string>
+    <string name="palette_halloween">Pei Pwmpen</string>
+    <string name="palette_zenburn">Salad Ffrwydau Estron</string>
+    <string name="palette_oceanic">Laser Glas</string>
 </resources>

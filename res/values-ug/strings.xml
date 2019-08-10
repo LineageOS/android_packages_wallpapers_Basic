@@ -18,39 +18,22 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- General -->
-  <!-- Application name -->
-  <string name="wallpapers">ئاندىرويىد ھەرىكەتچان تام قەغەزلەر</string>
-  <!-- Wallpapers: -->
-  <!-- Wallpaper showing the camera preview -->
-  <string name="wallpaper_walkaround">سۈزۈك</string>
-  <string name="wallpaper_walkaround_author">Google</string>
-  <string name="wallpaper_walkaround_desc">تېلېفوندا كۆزىتىپ، خاتىرجەم  مېڭىپ يۈرۈڭ.</string>
-  <!-- Wallpaper showing a clock -->
-  <string name="wallpaper_clock">قۇتۇپ سائەت</string>
-  <string name="wallpaper_clock_author">Google</string>
-  <string name="wallpaper_clock_desc">سائەت ئايلىنىش يۆنىلىشىدە چېسلا ۋە ۋاقىتنى ياي شەكىلدە كۆرسىتىدۇ: ئاي، كۈن، سائەت، مىنۇت ۋە سېكۇنت.</string>
-  <!-- Polar clock: title of settings activity -->
-  <string name="clock_settings">قۇتۇپ سائەت تەڭشەكلەر</string>
-  <!-- Polar clock: label for "show seconds" pref -->
-  <string name="show_seconds">سېكۇنتنى كۆرسەت</string>
-  <!-- Polar clock: label for "variable widths" pref -->
-  <string name="variable_line_width">ئۆزگۈرۈشچان ھالقا كەڭلىكى</string>
-  <!-- Polar clock: label for "palette" pref -->
-  <string name="palette">رەڭ تاختىسى</string>
-  <!-- Polar clock: palette name -->
-  <string name="palette_gray">تۆمۈر</string>
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <string name="palette_matrix">يېشىل ئېكران</string>
-  <!-- Polar clock: palette name -->
-  <string name="palette_white_c">قۇتۇپ ئېيىقى (ھەرىكەتچان)</string>
-  <!-- Polar clock: palette name -->
-  <string name="palette_black_c">قارا ئۆڭكۈر (ھەرىكەتچان)</string>
-  <!-- Polar clock: palette name -->
-  <string name="palette_halloween">كاۋا سېرىغى توقاچ</string>
-  <!-- Polar clock: palette name -->
-  <string name="palette_zenburn">چەتئەل مېۋە سالاتى</string>
-  <!-- Polar clock: palette name -->
-  <string name="palette_oceanic">كۆك نۇر</string>
+    <string name="wallpapers">ئاندىرويىد ھەرىكەتچان تام قەغەزلەر</string>
+    <string name="wallpaper_walkaround">سۈزۈك</string>
+    <string name="wallpaper_walkaround_author">Google</string>
+    <string name="wallpaper_walkaround_desc">تېلېفوندا كۆزىتىپ، خاتىرجەم  مېڭىپ يۈرۈڭ.</string>
+    <string name="wallpaper_clock">قۇتۇپ سائەت</string>
+    <string name="wallpaper_clock_author">Google</string>
+    <string name="wallpaper_clock_desc">سائەت ئايلىنىش يۆنىلىشىدە چېسلا ۋە ۋاقىتنى ياي شەكىلدە كۆرسىتىدۇ: ئاي، كۈن، سائەت، مىنۇت ۋە سېكۇنت.</string>
+    <string name="clock_settings">قۇتۇپ سائەت تەڭشەكلەر</string>
+    <string name="show_seconds">سېكۇنتنى كۆرسەت</string>
+    <string name="variable_line_width">ئۆزگۈرۈشچان ھالقا كەڭلىكى</string>
+    <string name="palette">رەڭ تاختىسى</string>
+    <string name="palette_gray">تۆمۈر</string>
+    <string name="palette_matrix">يېشىل ئېكران</string>
+    <string name="palette_white_c">قۇتۇپ ئېيىقى (ھەرىكەتچان)</string>
+    <string name="palette_black_c">قارا ئۆڭكۈر (ھەرىكەتچان)</string>
+    <string name="palette_halloween">كاۋا سېرىغى توقاچ</string>
+    <string name="palette_zenburn">چەتئەل مېۋە سالاتى</string>
+    <string name="palette_oceanic">كۆك نۇر</string>
 </resources>

@@ -18,28 +18,26 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- General -->
-  <!-- Application name -->
-  <!-- Wallpapers: -->
-  <!-- Wallpaper showing the camera preview -->
-  <string name="wallpaper_walkaround_desc">
-        Mira pente\'l teléfonu y camina ensin peligru de tener accidentes.
+    <string name="wallpapers">Fondos de pantalla animaos d\'Android</string>
+    <string name="wallpaper_walkaround">Ver al traviés</string>
+    <string name="wallpaper_walkaround_author">Google</string>
+    <string name="wallpaper_walkaround_desc">        Mira pente\'l teléfonu y camina ensin peligru de tener accidentes.
     </string>
-  <!-- Wallpaper showing a clock -->
-  <string name="wallpaper_clock_desc">
-        Presenta la data y hora nun reló d\'arcos: mes,
+    <string name="wallpaper_clock">Reló polar</string>
+    <string name="wallpaper_clock_author">Google</string>
+    <string name="wallpaper_clock_desc">        Presenta la data y hora nun reló d\'arcos: mes,
         día, hora, minutu y segundu.
     </string>
-  <!-- Polar clock: title of settings activity -->
-  <!-- Polar clock: label for "show seconds" pref -->
-  <!-- Polar clock: label for "variable widths" pref -->
-  <!-- Polar clock: label for "palette" pref -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
-  <!-- Polar clock: palette name -->
+    <string name="clock_settings">Axustes de reló polar</string>
+    <string name="show_seconds">Amosar segundos</string>
+    <string name="variable_line_width">Variar l\'anchor de los aniellos</string>
+    <string name="palette">Paleta de colores</string>
+    <string name="palette_gray">Fierro</string>
+    <string name="palette_violet">Medianueche</string>
+    <string name="palette_matrix">Pantalla verde</string>
+    <string name="palette_white_c">Osu polar (dinámicu)</string>
+    <string name="palette_black_c">Furacu prietu (dinámicu)</string>
+    <string name="palette_halloween">Pastel de calabaza</string>
+    <string name="palette_zenburn">Ensalada de frutes alieníxena</string>
+    <string name="palette_oceanic">Láser azul</string>
 </resources>
