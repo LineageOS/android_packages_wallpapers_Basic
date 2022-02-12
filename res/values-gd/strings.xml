@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+* Copyright (C) 2008 The Android Open Source Project
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="wallpapers">Pàipearan-balla Android beòtha</string>
+    <string name="wallpaper_walkaround">Seall troimhe</string>
+    <string name="wallpaper_walkaround_author">Google</string>
+    <string name="wallpaper_walkaround_desc">        Seall tron fhòn agad ach an coisicheadh tu gun tubaist.
+    </string>
+    <string name="wallpaper_clock">Cleoc pòlarach</string>
+    <string name="wallpaper_clock_author">Google</string>
+    <string name="wallpaper_clock_desc">        Seallaidh seo an ceann-là ’s an t-àm air boghachan gu deiseil: mìos,
+        latha, uair, mionaid is diog.
+    </string>
+    <string name="clock_settings">Roghainnean a’ chleoca phòlaraich</string>
+    <string name="show_seconds">Seall na diogan</string>
+    <string name="variable_line_width">Leud caochlaideach nam fàinneachan</string>
+    <string name="palette">Pailead nan dathan</string>
+    <string name="palette_gray">Iarann</string>
+    <string name="palette_violet">Meadhan-oidhche</string>
+    <string name="palette_matrix">Sgrìn uaine</string>
+    <string name="palette_white_c">Mathan-bàn (innsgineach)</string>
+    <string name="palette_black_c">Toll-dubh (innsgineach)</string>
+    <string name="palette_halloween">Pàidh peapaig</string>
+    <string name="palette_zenburn">Sailead mheasan fànais</string>
+    <string name="palette_oceanic">Leusair gorm</string>
+</resources>
